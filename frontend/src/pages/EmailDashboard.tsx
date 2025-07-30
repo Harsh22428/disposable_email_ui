@@ -28,7 +28,8 @@ const EmailDashboard = () => {
     setIsLoading(true);
     setError(null);
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
+      // const apiUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
+      const apiUrl="http://api.luxidevilott.com"
 
       const response = await fetch(
         `${apiUrl}/api?to=${encodeURIComponent(emailAddress)}`
